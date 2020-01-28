@@ -1,0 +1,64 @@
+package rules;
+
+import com.johnfnash.learn.drools.demo.ScoreGradeTest.Score;
+
+function void print(String grade) {
+	System.out.println(grade);
+}
+
+rule "ScoreA"
+	when 
+		Score(score > 90)
+	then
+		print("A");
+end
+
+rule "ScoreB+"
+	when 
+		Score(score >=87 && score < 90)
+	then
+		print("B+");	
+end
+
+rule "ScoreB"
+    when 
+        Score(score >=80 && score<=86)
+    then
+        print("B");
+end
+
+rule "ScoreC+"
+    when 
+        Score(score >=77 && score<=79)
+        
+    then
+        print("C+");
+end
+
+rule "ScoreC"
+    when 
+        Score(score >=70 && score<=76)
+    then
+        print("C");
+end
+
+rule "ScoreD+"
+    when 
+        Score(score >=67 && score<=69)
+    then
+        print("D+");
+end
+
+rule "ScoreD"
+    when 
+        Score(score >=60 && score<=66)
+    then
+        print("D");
+end
+
+rule "ScoreE"
+    when 
+        Score(score < 60)
+    then
+        print("E");
+end

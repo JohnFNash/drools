@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="rules" packages="rules">
+        <ksession name="all-rules"></ksession>
+    </kbase>
+    
+    <kbase name="scores" packages="rules">
+        <ksession name="score-rules"></ksession>
+    </kbase>
+</kmodule>
