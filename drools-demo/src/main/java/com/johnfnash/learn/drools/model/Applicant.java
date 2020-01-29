@@ -1,4 +1,4 @@
-package com.johnfnash.learn.drools.demo;
+package com.johnfnash.learn.drools.model;
 
 public class Applicant {
 

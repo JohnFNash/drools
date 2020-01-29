@@ -1,6 +1,6 @@
-package rules;
+package rules.basic.first;
 
-import com.johnfnash.learn.drools.demo.Applicant;
+import com.johnfnash.learn.drools.model.Applicant;
 
 rule "Is of valid age" //给规则取个名
 when

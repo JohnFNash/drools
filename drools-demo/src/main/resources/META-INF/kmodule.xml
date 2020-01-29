@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kmodule xmlns="http://www.drools.org/xsd/kmodule">
-    <kbase name="rules" packages="rules">
+    <kbase name="rules" packages="rules.basic.first">
         <ksession name="all-rules"></ksession>
     </kbase>
     
-    <kbase name="scores" packages="rules">
+    <kbase name="scores" packages="rules.basic.score">
         <ksession name="score-rules"></ksession>
+    </kbase>
+    
+    <kbase name="rhsInsert" packages="rules.rhs.insert">
+        <ksession name="rhs-insert-rules"></ksession>
+    </kbase>
+    
+    <kbase name="rhsUpdate" packages="rules.rhs.update">
+        <ksession name="rhs-update-rules"></ksession>
+    </kbase>
+    
+    <kbase name="rhsModify" packages="rules.rhs.modify">
+        <ksession name="rhs-modify-rules"></ksession>
     </kbase>
 </kmodule>

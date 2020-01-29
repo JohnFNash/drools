@@ -1,0 +1,21 @@
+package rules.rhs.insert;
+
+import com.johnfnash.learn.drools.model.Product;
+
+rule "insert-check"
+	salience 1
+	when
+		$p : Product(type == GOLD);
+	then
+		System.out.println("insert-check : insert Product success and it's type is " + $p.getType());
+end
+
+rule "insert-action"
+	salience 2
+	when
+	then
+		System.out.println("insert-action : To insert the Product");
+		Product p = new Product();
+		p.setType(Product.GOLD);
+		insert(p);
+end

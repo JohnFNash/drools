@@ -1,4 +1,4 @@
-package com.johnfnash.learn.drools.demo;
+package com.johnfnash.learn.drools.basic;
 
 import java.util.Scanner;
 

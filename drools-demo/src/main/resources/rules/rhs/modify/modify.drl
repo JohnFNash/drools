@@ -1,0 +1,14 @@
+package rules.rhs.modify;
+
+import com.johnfnash.learn.drools.model.Cheese;
+
+rule "modify stilton"
+	when	
+		$stilton : Cheese(type == 'stilton')
+	then
+		modify ( $stilton ) {
+			setPrice(20),
+			setAge("override")
+		};
+		System.out.println($stilton);
+end

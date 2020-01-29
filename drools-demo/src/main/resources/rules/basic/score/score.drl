@@ -1,6 +1,6 @@
-package rules;
+package rules.basic.score;
 
-import com.johnfnash.learn.drools.demo.ScoreGradeTest.Score;
+import com.johnfnash.learn.drools.basic.ScoreGradeTest.Score;
 
 function void print(String grade) {
 	System.out.println(grade);
