@@ -19,4 +19,16 @@
     <kbase name="rhsModify" packages="rules.rhs.modify">
         <ksession name="rhs-modify-rules"></ksession>
     </kbase>
+    
+    <kbase name="map" packages="rules.collection.map">
+        <ksession name="rhs-map-rules"></ksession>
+    </kbase>
+    
+    <kbase name="list" packages="rules.collection.list">
+        <ksession name="rhs-list-rules"></ksession>
+    </kbase>
+    
+    <kbase name="listContains" packages="rules.collection.listContains">
+        <ksession name="listContains-rules"></ksession>
+    </kbase>
 </kmodule>

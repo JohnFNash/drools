@@ -1,0 +1,12 @@
+package rules.collection.map;
+
+import java.util.Map;
+dialect "java";
+
+rule "Hello World"
+when
+	$map : Map()
+	$o : Object($map["status"] == "0");
+then
+	System.out.println($map.get("message"));
+end

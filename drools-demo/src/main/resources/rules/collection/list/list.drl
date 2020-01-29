@@ -1,0 +1,24 @@
+package rules.collection.list
+
+import com.johnfnash.learn.drools.model.Company
+import java.util.List
+import java.util.ArrayList
+
+rule "compareListRule"
+when
+	$blackList : List();
+	$company : Company($scoreList:scopes, toCompareList(scopes, $blackList));
+then
+	System.out.println("黑名单规则触发!");
+end
+
+function Boolean toCompareList(List targetList, List blackList) {
+	Boolean flag = false;
+	for(Object obj : targetList){
+        if(blackList.contains(obj)){
+            flag  = true;
+            break;
+        }
+    }
+    return flag;
+}
