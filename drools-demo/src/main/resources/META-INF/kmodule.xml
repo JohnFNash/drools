@@ -31,4 +31,12 @@
     <kbase name="listContains" packages="rules.collection.listContains">
         <ksession name="listContains-rules"></ksession>
     </kbase>
+    
+    <kbase name="activationGroup" packages="rules.activationGroup">
+        <ksession name="activationGroup-rules"></ksession>
+    </kbase>
+    
+    <kbase name="agendaGroup" packages="rules.agendaGroup">
+        <ksession name="agendaGroup-rules"></ksession>
+    </kbase>
 </kmodule>

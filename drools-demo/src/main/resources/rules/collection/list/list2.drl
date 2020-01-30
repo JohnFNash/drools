@@ -1,0 +1,13 @@
+package rules.collection.list
+
+import com.johnfnash.learn.drools.model.Company
+import java.util.List
+import java.util.ArrayList
+
+rule "compareListRule2"
+when
+	$blackList : List();
+	$company : Company($scoreList:scopes, toCompareList(scopes, $blackList));
+then
+	System.out.println("list2 黑名单规则触发!");
+end
