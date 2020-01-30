@@ -67,4 +67,8 @@
     <kbase name="factHandle" packages="rules.factHandler">
         <ksession name="factHandle-rules"></ksession>
     </kbase>
+    
+    <kbase name="updateExtend" packages="rules.rhs.updateExtend">
+        <ksession name="updateExtend-rules"></ksession>
+    </kbase>
 </kmodule>

@@ -1,0 +1,23 @@
+package rules.rhs.updateExtend
+
+import com.johnfnash.learn.drools.model.Dog
+import com.johnfnash.learn.drools.model.MyData
+
+rule "is my dog a baby?"
+salience 10
+when
+	dog : Dog(age < 1, baby == false);
+	myData : MyData(myDog == dog)
+then
+	dog.setBaby(true);
+	update(dog);
+	update(myData);
+end
+
+rule "baby dog"
+salience 9
+when
+	myData : MyData( myDog.isBaby() == false )
+then
+	System.out.println(myData.getMyDog().isBaby());
+end
