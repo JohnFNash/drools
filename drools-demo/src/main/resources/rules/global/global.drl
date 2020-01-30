@@ -1,0 +1,13 @@
+package rules.global
+
+import java.util.ArrayList
+
+global java.util.List myGlobalList
+
+rule "Using a global"
+when
+	eval (true)
+then
+	//myGlobalList = new ArrayList();
+	myGlobalList.add("Helo World");
+end

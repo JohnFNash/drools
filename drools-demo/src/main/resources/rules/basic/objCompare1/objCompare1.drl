@@ -1,0 +1,12 @@
+package rules.basic.objCompare1
+
+import com.johnfnash.learn.drools.model.Customer
+
+rule "two same objects"
+when
+	$firstCustomer:Customer(age == 59);
+	$secondCustomer:Customer(this != $firstCustomer, age == 61);
+then
+	System.out.println("firstCustomer age :" + $firstCustomer.getAge());
+    System.out.println("secondCustomer age :" + $secondCustomer.getAge());
+end

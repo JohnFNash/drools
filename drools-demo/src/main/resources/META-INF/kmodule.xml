@@ -39,4 +39,32 @@
     <kbase name="agendaGroup" packages="rules.agendaGroup">
         <ksession name="agendaGroup-rules"></ksession>
     </kbase>
+    
+    <kbase name="objCompare1" packages="rules.basic.objCompare1">
+        <ksession name="objCompare1-rules"></ksession>
+    </kbase>
+    
+    <kbase name="objCompare2" packages="rules.basic.objCompare2">
+        <ksession name="objCompare2-rules"></ksession>
+    </kbase>
+    
+    <kbase name="query" packages="rules.query">
+        <ksession name="query-rules"></ksession>
+    </kbase>
+    
+    <kbase name="global" packages="rules.global">
+        <ksession name="global-rules"></ksession>
+    </kbase>
+    
+    <kbase name="ruleName" packages="rules.basic.ruleName">
+        <ksession name="ruleName-rules"></ksession>
+    </kbase>
+    
+    <kbase name="ruleFireCount" packages="rules.basic.fireCount">
+        <ksession name="ruleFireCount-rules"></ksession>
+    </kbase>
+    
+    <kbase name="factHandle" packages="rules.factHandler">
+        <ksession name="factHandle-rules"></ksession>
+    </kbase>
 </kmodule>

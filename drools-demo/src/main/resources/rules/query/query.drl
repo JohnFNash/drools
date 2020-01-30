@@ -1,0 +1,18 @@
+package rules.query
+
+import com.johnfnash.learn.drools.model.Person
+
+rule "query-test"
+when
+	$person : Person()
+then
+	System.out.println("The rule query-test fired!");
+end
+
+query "query-1"
+	$person : Person(age > 30)
+end
+
+query "query-2" (String nameParam)
+	$person : Person(age > 30, name == nameParam)
+end
